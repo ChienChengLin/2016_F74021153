@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PTTonitor</title>
+    <!-- Main CSS -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="main/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="main/css/half-slider.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style="background-color:#F0F0F0;">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container" >
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./graph.html">PTTonitor</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+    <!-- Page Content -->
+    <br>
+    <br>
+    <br>
+    <div id="container" class="container" style="background-image:url(image/background.jpg); width:1440px; height:760px;">
+    <div style="width:250px; height:35px;">
+       <input id="search">
+        <button type="button" onclick="searchNode()">Search</button>
+    </div>
+
+    <div id="display_left" style="width:810px; height:700px; border:2px rgba(43, 63, 51, 0.2) dashed;");">
+      <script src="https://d3js.org/d3.v3.min.js"></script>
+      <script type='text/javascript' src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+      <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+      <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"></script>
+      <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
+      
+      <!-- Load the css and js file of loading mask -->
+      <link href="HoldOn.js-master/src/css/HoldOn.min.css" rel="stylesheet">
+      <script src="HoldOn.js-master/src/js/HoldOn.min.js"></script>   
+      <!-- Load the force layout js file-->
+      <script src="force_graph.js"></script>   
+    </div>
+
+    <div id="middle_line" style="width:1px; height:700px;">
+    </div>
+
+    <div id="display_right" style="width:595px; height:700px; border:0px #cccccc;">
+      <div id="display2" style="width:595px; height:100px; background: rgba(43, 63, 51, 0.75);">
+        <br><info></info>
+      </div>
+      <div id="display3" style="width:595px; height:600px; border:0px #cccccc outset; background: rgba(43, 43, 43, 0.8);">
+        <script src="bubble_chart.js"></script> 
+      </div>  
+    </div>
+
+    </div>
+</body>
+
+</html>
