@@ -227,6 +227,28 @@ body, input, button {
   left: 0;
 }
 
+#graph_legend_bar {
+  height: 36px;
+  width: 300px;
+  position: absolute;
+  overflow:hidden;
+  border-radius:20px 20px 0px 0px;
+  z-index: 999;
+  left: 510px;
+  top: 110px;
+  opacity: 0.8;
+}
+#graph_legend {
+  height: 180px;
+  width: 300px;
+  position: absolute;
+  overflow:hidden;
+  border-radius:0px 0px 20px 20px;
+  z-index: 999;
+  left: 510px;
+  top: 146px;
+  opacity: 0.8;
+}
 #display_left {
   float:left;
   border-radius:20px;

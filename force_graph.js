@@ -266,4 +266,3 @@ d3.json("force_graph/graph.json", function(error, json) {
           }) 
           }
   }
-
